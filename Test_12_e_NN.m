@@ -1,6 +1,6 @@
 close all; clear all; clc
-addpath('/Users/hvimalajeewa2/Documents/UNL_Documents/Projects/Gait_Data/Matlab/MatlabFunctions/')
-addpath '/Users/hvimalajeewa2/Documents/TAMU_Documents/TAMU/WaveletSrinkage/LPM/matlab'
+addpath('/MatlabFunctions/')
+addpath '/matlab'
 
 
 seed = 10;
