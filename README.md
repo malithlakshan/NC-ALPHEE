@@ -1,1 +1,3 @@
-# NC-ALPHEE
+# Neural Network-based Noise Resilient  Approach for Robust Hurst Exponent Estimation
+We propose **Noise-Controlled ALPHEE (NC-ALPHEE)**, an enhancement of the **Average Level-Pairwise Hurst Exponent Estimator (ALPHEE)**, incorporating noise mitigation and generating multiple level-pairwise estimates from signal energy pairs. A neural network (NN) combines these estimates, replacing traditional averaging. This adaptive learning maintains ALPHEE’s behavior in noise-free cases while improving performance in noisy conditions. The steps below explain how to implement the **NC-ALPHEE** using **Matlab** and continue the Aggregation using **Python**.
+
