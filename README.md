@@ -2,14 +2,15 @@
 We propose **Noise-Controlled ALPHEE (NC-ALPHEE)**, an enhancement of the **Average Level-Pairwise Hurst Exponent Estimator (ALPHEE)**, incorporating noise mitigation and generating multiple level-pairwise estimates from signal energy pairs. A neural network (NN) combines these estimates, replacing traditional averaging. This adaptive learning maintains ALPHEE’s behavior in noise-free cases while improving performance in noisy conditions. The steps below explain how to implement the **NC-ALPHEE** using **Matlab** and continue the Aggregation using **Python**.
 
 ### Matlab Codes
-  1. first
+The repository includes Matlab files that are used to implement
+  1. The estimation of Hurst exponents from fractional Brownian motion using wavelet-based methods and compares traditional aggregation with a neural network approach.
   2. second
   3. Third
 
 The MatlabFunctions folder contains a set of functions used in the Matlab files.
 In the following, a brief introduction, for each code, is provided to explain its functionality.
 
-1. Implementation of the new method
+1. **Test_12_e_NN.m** : This MATLAB script simulates fractional Brownian motion signals with varying Hurst exponents and noise levels, applies wavelet-based decomposition, and computes multiple candidate H estimators from scale-pair energy statistics. It then aggregates these estimators using both traditional methods (weighted mean/median) and a neural network model to improve robustness. The script evaluates prediction accuracy across methods, visualizes actual vs. estimated Hurst exponents, and compares performance in noise-free and noisy conditions.
 2. Simulation Study
 
 
