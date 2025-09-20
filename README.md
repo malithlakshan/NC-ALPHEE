@@ -4,14 +4,14 @@ We propose **Noise-Controlled ALPHEE (NC-ALPHEE)**, an enhancement of the **Aver
 ### Matlab Codes
 The repository includes Matlab files that are used to implement
   1. The estimation of Hurst exponents from fractional Brownian motion using wavelet-based methods and compares traditional aggregation with a neural network approach.
-  2. second
+  2. The simulated fBM across H and noise levels, performs wavelet decompositions to compute pairwise H estimators with and without noise correction (m=1 vs m=2), derives variance-based weights, and exports CSVs for downstream neural-network aggregation and evaluation.
   3. Third
 
 The MatlabFunctions folder contains a set of functions used in the Matlab files.
 In the following, a brief introduction, for each code, is provided to explain its functionality.
 
 1. **Test_12_e_NN.m** : This MATLAB script simulates fractional Brownian motion signals with varying Hurst exponents and noise levels, applies wavelet-based decomposition, and computes multiple candidate H estimators from scale-pair energy statistics. It then aggregates these estimators using both traditional methods (weighted mean/median) and a neural network model to improve robustness. The script evaluates prediction accuracy across methods, visualizes actual vs. estimated Hurst exponents, and compares performance in noise-free and noisy conditions.
-2. Simulation Study
+2. **Test_13_b.m** : This MATLAB script generates fractional Brownian motion signals across a range of Hurst exponents and noise levels, applies wavelet decomposition, and computes candidate H estimators using both noise-corrected and uncorrected formulations. For each estimator, it calculates variance-based weights to quantify reliability and stores both the estimates and weights in CSV files for later analysis. The framework is designed to support advanced aggregation methods, such as neural network models, to combine multiple estimators and improve accuracy in both noise-free and noisy conditions.
 
 
 ### Python Codes
